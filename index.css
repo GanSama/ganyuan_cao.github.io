@@ -9,9 +9,8 @@ p.address{
   margin-left: 20px;
 }
 #content{
-   font-family: "Courier New", Courier, monospace; 
-  /*font-family: Verdana, Geneva, sans-serif;*/
-  /*font-family: "Lucida Console", Monaco, monospace*/
+  /*font-family: "Courier New", Courier, monospace;*/
+  font-family: "Lucida Console", Monaco, monospace;
   font-size: 1rem;
   font-weight: 550;
   line-height: 1.5;

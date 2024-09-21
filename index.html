@@ -11,35 +11,38 @@
     </script>
 
     <link rel="stylesheet" type="text/css" href="index.css">
-
     <title>Ganyuan Cao's Homepage</title>
-    
   </head>
 
   <body>
-    <div id = "container"> 
-      <div id = "header"> 
-        <h1 style="margin-left:20px">Ganyuan Cao</h1> 
+    <div id="container">
+      <div id="header">
+        <h1 style="margin-left:20px">Ganyuan Cao</h1>
+        <nav>
+          <ul style="list-style: none; margin-left: 20px;">
+            <li><a href="#education">Education</a></li>
+            <li><a href="#research">Research Experience</a></li>
+            <li><a href="#publications">Articles & Publications</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-      <hr \>
-      <div id = "menu" style = "menu"> 
-        <img id = "me" alt="photo" align="left" src = "./images/profile_summer.jpg" height ="250"> 
+      <hr />
+
+      <div id="menu" style="menu">
+        <img id="me" alt="photo" align="left" src="./images/profile_summer.jpg" height="250">
       </div>
 
-      <div id = "content">
-        <p style="margin-left:40px">
-          I am a Master student in Computer Science - Cyber Security at EPFL. 
+      <div id="content">
+        <p style="margin-left:40px">I am a Master student in Computer Science - Cyber Security at EPFL.</p>
 
-        </p>
         <p style="margin-left:40px">
-          My research interests include: 
-              <ul>
-                <li>Succinct Computational Integrity & Privacy (SCIP) algorithms including non-interactive knowledge proof, and their application on blockchain.</li>
-                <li>Cryptographic protocols in distributed system.</li>
-                <li>Cryptographic algorithms including Homomorphic Encryption, Secret Sharing, and etc.</li>
-              </ul>
+          My research interests include:
+          <ul>
+            <li>Provable Security: game-based proof, composable security, security formalism...</li>
+            <li>Probabilistic Proofs: interactive, zero-knowledge...</li>
+          </ul>
         </p>
-
 
         <hr>
 
@@ -53,156 +56,74 @@
           <small>(last updated in Oct, 2020)</small>
         </p>
 
-        <p style="margin-left:40px">
-          Email: <a href="mailto:ganyuan.cao@epfl.ch">ganyuan.cao@epfl.ch</a>
-        </p>
-
-
-        <div class="flex">
-          <article class="card">
-            <header>
-              <h2>News !!!</h2>
-            </header>
-            <ul>
-              <article>
-                I am writing a note for theories in Cryptography. 
-                <br> This note includes some basic and advanced topics in Cryptography.
-                <br> The note also includes some knowledge in Number Theory, Abstract Algebra, and Elliptic Curves which is important for Cryptography.
-                <br> <u>The note has not been completed.</u> Symmetric Cryptosystems and Classic Ciphers will be updated.
-                <br> For current version, plese visit  <a href="./papers/a_brief_note_on_crypto.pdf" target="_blank">(link to Crypto note)</a>. 
-                <br> You can also access the note via IPFS at the hash: 
-                <br> <code>QmervuP4aHQqZaLe9GBNR4eNQh6kF6jt53c7QjQvXoew6B</code>
-                <br> Any advice is welcomed at my email !
-              </article>
-            </ul>
-          </article>
-        </div>
-
-
-        <div class="flex">
+        <!-- Section 1: Education -->
+        <div id="education" class="flex">
           <article class="card">
             <header>
               <h2>Education</h2>
             </header>
-            
             <ul>
               <li>
-                Master of Science, Informatique(Cybersecurity), EPFL, Lausanne, Switzerland, Expected September 2021 - July 2023
+                Master of Science, Informatique (Cybersecurity), EPFL, Lausanne, Switzerland, Expected September 2021 - July 2023
+                <br>--- Research Project: Revisiting and Enhancing SCB mode towards Length-Preserving AEAD
               </li>
-            </ul>
-
-            <ul>
               <li>
-                Bachelor of Science, Computer Science(Cybersecurity), Arizona State University, Tempe, AZ, August 2016 - May 2020
+                Bachelor of Science, Computer Science (Cybersecurity), Arizona State University, Tempe, AZ, August 2016 - May 2020
+                <br>--- Minor/Certificate: Cryptology
               </li>
-                <!-- - Advisor : Dr. Gail-Joon Ahn -->
-                     --- Minor/Certificate: Cryptology
-                <br> --- Honors: Summa Cum Laude (GPA: 3.83/4.0)
             </ul>
           </article>
         </div>
 
-
-        <div class="flex">
-          <article class="card">
-            <header>
-              <h2>Skills & Knowledge</h2>
-            </header>
-            <ol>
-              <div class='skills'>
-
-                <div class='column'>
-                  <h4>Skills</h4>
-                    <ul>
-                      <li>Programming Languages: Python, C/C++, Java, Solidity</li>
-                      <li>Mathematical Computation: Wolfram Mathematica, Pari/GP</li>
-                      <li>OS & Framework: Linux, Docker</li>
-                      <li>Text Editing: LaTex, Markdown</li>
-                    </ul>
-                </div>
-      
-                <div class='column'>
-                  <h4>Knowledge</h4>
-                    <ul>
-                      <li>Cryptography</li>
-                      <li>Blockchain & Crytocurrency</li>
-                      <li>Elliptic Curves</li>
-                      <li>Abstract Algebra</li>
-                      <li>Number Theory</li>
-                    </ul>
-                  </div>
-              </div>
-            </ol>
-          </article>
-        </div>
-
-
-        <div class="flex">
-          <article class="card">
-            <header>
-              <h2>Articles, Publication & Posters</h2>
-            </header>
-            <ol>
-              <li>Xue, Tengfei, Yuyu Yuan, Zahir Ahmed, Krishna Moniz, <u>Ganyuan Cao</u>, and Cong Wang. "Proof of Contribution: A Modification of Proof of Work to Increase Mining Efficiency." In 2018 IEEE 42nd Annual Computer Software and Applications Conference (COMPSAC), pp. 636-644. IEEE, 2018.
-                <a href="https://ieeexplore.ieee.org/document/8377721" target="_blank">(link to paper)</a>
-              </li>
-              
-              <li><u>Cao,Ganyuan</u>. "Computational Problems in Designing Asymmetric Cryptosystems". 2019. Arizona State University, Bachelor's Research Paper.
-                <a href="./papers/Computational_Problems_in_Designing_Asymmetric_Cryptosystems.pdf" target="_blank">(link to paper)</a>
-              </li>
-              
-              <li><u>Cao,Ganyuan</u>. "Estafette : A Parallelized Block Generation Protocol to increase scalability of cryptocurrencies". In 2018 Arizona State University CryptoRally poster session.
-                  <a href="./papers/estafette.pdf" target="_blank">(link to poster)</a>
-              </li>
-              <hr>
-              <hr>
-            </ol>
-          </article>
-        </div>
-
-
-        <div class="flex">
+        <!-- Section 2: Research Experience -->
+        <div id="research" class="flex">
           <article class="card">
             <header>
               <h2>Research Experience</h2>
             </header>
             <ul>
-              <li>
-                Undergraduate Research Associate
-                at <a href="http://sefcom.asu.edu/" target="_blank">Laboratory of Security Engineering for Future Computing (SEFCOM) </a> - July 2017 ~ August 2018 <br>
+              <li>Undergraduate Research Associate at <a href="http://sefcom.asu.edu/" target="_blank">Laboratory of Security Engineering for Future Computing (SEFCOM)</a> - July 2017 ~ August 2018
+                <br>--- Design algorithms and protocols to increase PoW blockchain mining efficiency while preserving the original security features.
+                <br>--- Evaluate performance of different blockchain consensus protocols including Proof-of-Work, Proof-of-Stake, and Byzantine Fault Tolerance protocols.
               </li>
-              --- Design algorithms and protocols to increase the PoW blockchain mining efficiency while preserving the original security features.
-              <br>--- Evaluate performance of different blockchain consensus protocols including Proof-of-Work, Proof-of-Stake, and Byzantine Fault Tolerance protocols.
-              <hr>
             </ul>
+            <hr>
           </article>
         </div>
 
-
-
-        <div class="flex">
+        <!-- Section 3: Articles & Publications -->
+        <div id="publications" class="flex">
           <article class="card">
             <header>
-              <h2>Certificates</h2>
+              <h2>Articles, Publications & Posters</h2>
             </header>
-            <ul>
-              <li> Bitcoin and Cryptocurrency Technologies -> Coursera </li>
-              <li> Blockchain -> Coursera <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/N3C5JDMFDYJN">(Link to Certificate)</a>  </li>
-              <li> Cryptography I -> Coursera <a href="https://www.coursera.org/account/accomplishments/certificate/CRKJZURRT2P3">(Link to Certificate)</a> </li>
-              <li>Cryptography and Information Theory -> Coursera <a href="https://www.coursera.org/account/accomplishments/certificate/X68SJUHZ3XQP">(Link to Certificate)</a> </li>
-              <li> Cyber Attack Countermeasures -> Coursera <a href="https://www.coursera.org/account/accomplishments/certificate/6ETN6N6224PT">(Link to Certificate)</a> </li>
-              <hr>
-            </ul>
+            <ol>
+              <li>
+                Xue, Tengfei, Yuyu Yuan, Zahir Ahmed, Krishna Moniz, <u>Ganyuan Cao</u>, and Cong Wang. "Proof of Contribution: A Modification of Proof of Work to Increase Mining Efficiency." In 2018 IEEE 42nd Annual Computer Software and Applications Conference (COMPSAC), pp. 636-644. IEEE, 2018.
+                <a href="https://ieeexplore.ieee.org/document/8377721" target="_blank">(link to paper)</a>
+              </li>
+            </ol>
           </article>
         </div>
 
-
+        <!-- Section 4: Contact -->
+        <div id="contact">
+          <p style="margin-left:40px">Email: <a href="mailto:ganyuan.cao@epfl.ch">ganyuan.cao@epfl.ch</a>
+            <br> <a href="mailto:gycao@proton.me">gycao@proton.me</a>
+          </p>
+        </div>
       </div>
+
+      <!-- Optional Footer -->
+      <footer>
+        <hr />
+        <p style="text-align:center;">
+          <a href="#header">Back to Top</a>
+        </p>
+      </footer>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
   </body>
 </html>
-
-
