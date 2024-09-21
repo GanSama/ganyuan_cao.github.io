@@ -16,78 +16,122 @@
 
   <body>
     <div id="container">
-      <div id="header">
-        <h1 style="margin-left:20px">Ganyuan Cao</h1>
-        <nav>
-          <ul style="list-style: none; margin-left: 20px;">
-            <li><a href="#education">Education</a></li>
-            <li><a href="#research">Research Experience</a></li>
-            <li><a href="#publications">Articles & Publications</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+      <div id="header" style="display: flex; justify-content: space-between; align-items: center; padding: 20px;">
+        <h1 style="font-family: 'Lucida Console', Monaco, monospace;">Ganyuan Cao</h1>
+        <!-- Contact Information in Header -->
+        <div style="font-family: 'Lucida Console', Monaco, monospace;">
+          <p>Email: <a href="mailto:ganyuan.cao@epfl.ch">ganyuan.cao@epfl.ch</a> | <a href="mailto:gycao@proton.me">gycao@proton.me</a></p>
+          <p>Phone: +41 76 504 44 28</p>
+        </div>
       </div>
+      
+      <!-- Horizontal Navigation Menu -->
+      <nav style="display: flex; justify-content: center; background-color: #f1f1f1; padding: 10px 0;">
+        <ul style="list-style: none; display: flex; gap: 20px; margin: 0; padding: 0; font-family: 'Lucida Console', Monaco, monospace;">
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#publications">Articles & Publications</a></li>
+          <li><a href="#skills">Skills</a></li>
+        </ul>
+      </nav>
+
       <hr />
 
-      <div id="menu" style="menu">
-        <img id="me" alt="photo" align="left" src="./images/profile_summer.jpg" height="250">
+      <!-- Profile Image -->
+      <div id="menu" style="text-align: center;">
+        <img id="me" alt="photo" src="./images/profile_summer.jpg" height="175">
       </div>
 
+      <!-- Intro Section -->
       <div id="content">
-        <p style="margin-left:40px">I am a Master student in Computer Science - Cyber Security at EPFL.</p>
+        <p style="margin-left:40px">
+          I am a Master student in Computer Science – Cybersecurity at EPFL and ETH Zurich. 
+        </p>
 
         <p style="margin-left:40px">
-          My research interests include:
+          <strong>Research Interests:</strong>
           <ul>
             <li>Provable Security: game-based proof, composable security, security formalism...</li>
-            <li>Probabilistic Proofs: interactive, zero-knowledge...</li>
+            <li>Probabilistic Proofs: interactive proofs, zero-knowledge protocols...</li>
           </ul>
-        </p>
-
-        <hr>
-
-        <p style="margin-left:40px">
-          Curriculum Vitae: [<a href="./person_intro/Ganyuan_Cao_CV.pdf">PDF</a>]
-          <small>(last updated in June, 2021)</small>
-        </p>
-
-        <p style="margin-left:40px">
-          Personal Statement: [<a href="./person_intro/Ganyuan_Cao_Statement_of_Purpose.pdf">PDF</a>]
-          <small>(last updated in Oct, 2020)</small>
         </p>
 
         <!-- Section 1: Education -->
-        <div id="education" class="flex">
-          <article class="card">
-            <header>
-              <h2>Education</h2>
-            </header>
-            <ul>
-              <li>
-                Master of Science, Informatique (Cybersecurity), EPFL, Lausanne, Switzerland, Expected September 2021 - July 2023
-                <br>--- Research Project: Revisiting and Enhancing SCB mode towards Length-Preserving AEAD
-              </li>
-              <li>
-                Bachelor of Science, Computer Science (Cybersecurity), Arizona State University, Tempe, AZ, August 2016 - May 2020
-                <br>--- Minor/Certificate: Cryptology
-              </li>
-            </ul>
-          </article>
-        </div>
+<div id="education" class="flex">
+  <article class="card">
+      <header>
+          <h2>Education</h2>
+      </header>
+      <table style="width:100%; border-collapse: collapse;">
+          <tr>
+              <td style="width: 15%; vertical-align: top;">
+                  (2021.09-Now)
+              </td>
+              <td>
+                  <strong>M.Sc, Computer Science (Cybersecurity)</strong> - EPFL & ETH Zurich, Lausanne & Zurich, Switzerland<br>
+                  --- <em>Research Project:</em> Revisiting and Enhancing SCB Mode towards Length-Preserving AEAD <br>
+                  <span style="padding-left: 20px;">|-> Supervisors: Prof. Dr. Ueli Maurer, Dr. Fabio Banfi</span>
+              </td>
+          </tr>
+          <tr>
+              <td style="width: 15%; vertical-align: top;">
+                  (2016.08-2020.05)
+              </td>
+              <td>
+                  <strong>B.Sc, Computer Science (Cybersecurity)</strong> - Arizona State University, Tempe, USA<br>
+                  --- Minor: Cryptology
+              </td>
+          </tr>
+      </table>
+  </article>
+</div>
 
-        <!-- Section 2: Research Experience -->
-        <div id="research" class="flex">
+        <!-- Section 2: Experience with Subsections -->
+        <div id="experience" class="flex">
           <article class="card">
             <header>
-              <h2>Research Experience</h2>
+              <h2>Experience</h2>
             </header>
-            <ul>
-              <li>Undergraduate Research Associate at <a href="http://sefcom.asu.edu/" target="_blank">Laboratory of Security Engineering for Future Computing (SEFCOM)</a> - July 2017 ~ August 2018
-                <br>--- Design algorithms and protocols to increase PoW blockchain mining efficiency while preserving the original security features.
-                <br>--- Evaluate performance of different blockchain consensus protocols including Proof-of-Work, Proof-of-Stake, and Byzantine Fault Tolerance protocols.
-              </li>
-            </ul>
+
+            <!-- Academia Subsection -->
+            <div id="academia">
+              <header>
+                <h3>Academia</h3>
+              </header>
+              <ul>
+                <li>
+                  <strong>Research Assistant</strong><br>
+                  Laboratory of Security Engineering for Future Computing (SEFCOM), Arizona State University<br>
+                  August 2017 – August 2018<br>
+                  <em>Responsibilities:</em>
+                  <ul>
+                    <li>Developed algorithms and protocols to enhance Proof-of-Work blockchain mining efficiency.</li>
+                    <li>Evaluated the performance of various blockchain consensus protocols (PoW, PoS, BFT).</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
             <hr>
+
+            <!-- Industry Subsection -->
+            <div id="industry">
+              <header>
+                <h3>Industry</h3>
+              </header>
+              <ul>
+                <li>
+                  <strong>Cryptography Engineer Intern</strong><br>
+                  DuoKey SA, Prilly, Switzerland<br>
+                  May 2024 – November 2024<br>
+                  <em>Key Responsibilities:</em>
+                  <ul>
+                    <li>Assessed fully homomorphic encryption (FHE) schemes for privacy-preserving machine learning.</li>
+                    <li>Developed machine learning pipelines for encrypted inference in CT and X-Ray image segmentation.</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </article>
         </div>
 
@@ -95,22 +139,39 @@
         <div id="publications" class="flex">
           <article class="card">
             <header>
-              <h2>Articles, Publications & Posters</h2>
+              <h2>Articles & Publications</h2>
             </header>
             <ol>
               <li>
-                Xue, Tengfei, Yuyu Yuan, Zahir Ahmed, Krishna Moniz, <u>Ganyuan Cao</u>, and Cong Wang. "Proof of Contribution: A Modification of Proof of Work to Increase Mining Efficiency." In 2018 IEEE 42nd Annual Computer Software and Applications Conference (COMPSAC), pp. 636-644. IEEE, 2018.
+                Ganyuan Cao. "A Constructive View of Homomorphic Encryption and Authenticator." Cryptology ePrint Archive, Paper 2024/1231, 2024.
+                <a href="https://eprint.iacr.org/2024/1231" target="_blank">(link to paper)</a>
+              </li>
+              <li>
+                Ganyuan Cao. "Decryption Indistinguishability under Chosen Control Flow." Cryptology ePrint Archive, Paper 2024/598, 2024.
+                <a href="https://eprint.iacr.org/2024/598" target="_blank">(link to paper)</a>
+              </li>
+              <li>
+                Xue, Tengfei, et al. "Proof of Contribution: A Modification of Proof of Work to Increase Mining Efficiency." IEEE COMPSAC, 2018.
                 <a href="https://ieeexplore.ieee.org/document/8377721" target="_blank">(link to paper)</a>
               </li>
             </ol>
           </article>
         </div>
 
-        <!-- Section 4: Contact -->
-        <div id="contact">
-          <p style="margin-left:40px">Email: <a href="mailto:ganyuan.cao@epfl.ch">ganyuan.cao@epfl.ch</a>
-            <br> <a href="mailto:gycao@proton.me">gycao@proton.me</a>
-          </p>
+        <!-- Section 4: Skills -->
+        <div id="skills" class="flex">
+          <article class="card">
+            <header>
+              <h2>Skills</h2>
+            </header>
+            <ul>
+              <li><strong>Programming Languages:</strong> Python, Rust, Golang, C/C++, Scala, Java</li>
+              <li><strong>Computer Algebra Systems:</strong> SageMath, Wolfram Mathematica, Pari/GP</li>
+              <li><strong>Frameworks & OS:</strong> Linux, Docker</li>
+              <li><strong>Text Editing:</strong> LaTeX, Markdown</li>
+              <li><strong>Languages:</strong> English (Professional), Mandarin Chinese (Native), French (Basic, A1)</li>
+            </ul>
+          </article>
         </div>
       </div>
 
